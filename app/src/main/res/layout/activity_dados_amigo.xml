@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="410dp"
+        android:layout_height="64dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="@android:color/transparent"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtNomeAmigo"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Nome"
+            app:layout_constraintEnd_toStartOf="@+id/txtCelularAmigo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCelularAmigo"
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Celular"
+            app:layout_constraintEnd_toStartOf="@+id/btnEditAmigo"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <ImageButton
+            android:id="@+id/btnEditAmigo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toStartOf="@+id/btnRemoveAmigo"
+            app:srcCompat="@mipmap/pencil"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <ImageButton
+            android:id="@+id/btnRemoveAmigo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@android:color/transparent"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@mipmap/close"
+            tools:layout_editor_absoluteY="3dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
